@@ -1,0 +1,310 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+img{
+  max-width: 100%;
+  max-height:100%;
+  display: block;
+}
+h1, h2,  h3, h5, h6{
+  font-family: 'Playfair Display', serif;
+
+}
+p, h4, span, a, label, h6{
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0px;
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
+    padding-bottom: 0px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap .container {
+    padding: 60px 15px 0;
+    max-width: 800px;
+}
+#wrap form{
+  padding-top: 30px;
+}
+#wrap form .container{
+  padding: 40px 15px 0;
+}
+
+.container .credit {
+    margin: 20px 0;
+}
+
+
+h1 { margin-bottom: 20px; }
+
+p { color: #787878; }
+
+code {
+    font-size: 80%;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    color: #e8e8e8;
+    display: inline-block;
+    padding:6px 12px;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+.inputfile-label{
+  background-color: white;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 12px;
+  width: 150px;
+  border: 2px solid #e8e8e8;
+}
+.inputfile-label:hover{
+  color:#64bfb7;
+  border-color: #64bfb7;
+}
+.inputfile-label:hover span{
+  color:#64bfb7;
+  border-color: #64bfb7;
+}
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+a{
+  color:#333333;
+  text-decoration: none;
+}
+a:hover{
+  border-bottom:0px;
+  text-decoration: none;
+}
+a:visited{
+  color:#333333;
+  text-decoration: none;
+}
+*{
+  transition: 0.2s ease all;
+}
+.glyphicon{
+  transition: 0s ease all;
+}
+.clickable{
+  cursor: pointer;
+}
+.display-tablet, .display-laptop{
+  display: none;
+}
+@media screen and (max-width: 799px) {
+  .display-tablet{
+    display: block;
+  }
+}
+@media screen and (min-width: 800px) {
+  .display-laptop{
+    display: block;
+  }
+}
+
+.border-bottom{
+  border-bottom: 1px solid #eee;
+}
+.col-logo{
+  padding:0px;
+}
+.row-padding{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.item{
+  padding-left: 8px;
+  padding-right: 8px;
+  position: relative;
+}
+.item img {
+  margin: 0px auto;
+}
+.item-overlay{
+  position: absolute;
+  width: calc(100% - 16px);
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 8px;
+  right: 8px;
+  opacity: 0;
+  text-align: center;
+}
+.item-overlay:hover{
+  background-color: #64bfb7;
+  opacity: 0.9;
+}
+.item-overlay h3, .item-overlay p {
+  margin:0px;
+}
+.item-overlay:hover h3, .item-overlay:hover p{
+  color:white;
+}
+.item-overlay__content {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  margin:0px;
+  color: #787878;
+}
+
+.item-title{
+  text-align: center;
+  color:#787878;
+}
+
+.indicator-link{
+  display: inline-block;
+  line-height: 50px;
+  margin-bottom: -1.5px;
+}
+.indicator--active{
+  color:#64bfb7;
+  border-bottom: 2px solid #64bfb7;
+}
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+footer, footer a, footer a:visited{
+  color: #787878;
+}
+footer{
+  padding-bottom: 60px;
+  background: linear-gradient( to right , #3B414E 44% , #3A2E45 100%);
+}
+.contact{
+  padding:144px 50px;
+  color: white;
+  text-align: center;
+}
+.contact h1{
+  margin-bottom: 48px;
+  font-size: 48px
+}
+.orbital-button{
+  background-color:#64bfb7;
+  padding:20px 36px;
+  color: white;
+}
+.orbital-button:hover{
+  opacity: 0.85;
+}
+.orbital-button--submit{
+  font-weight: 300;
+  width: 200px;
+  padding: 12px 26px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+}
+.orbital-button p{
+  display: inline-block;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.contact .orbital-button p, .contact .orbital-button:visited p{
+  color:white;
+}
+
+.orbital-input{
+  color:#787878;
+}
+.orbital-input input{
+  border: 0px solid #eeeeee;
+  border-bottom-width: 1px;
+}
+.dimension{
+  padding:6px 4px;
+}
+.dimension label{
+  width: 10%;
+}
+.dimension input{
+  width: 85%;
+}
+.success{
+  display: none;
+  border-radius:2px;
+  color: white;
+  border: 2px solid #00cc00;
+  background-color: #00e500;
+  padding:6px 15px;
+}
+.success-active{
+  display: block;
+}
+.hidden{
+  display: none;
+  overflow: hidden;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+  opacity: 0;
+}
+.hidden input{
+  display: none;
+  overflow: hidden;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+  opacity: 0;
+}
+
+.error-class label{
+  color: red;
+}
+.error-class input, .error-class .inputfile-label{
+  border: 2px solid red;
+}
+
+.padding-top{
+  padding-top:24px;
+}
+.padding-bottom--half{
+  padding-bottom: 12px;
+}
